@@ -2,6 +2,8 @@
 
 Developed by Alex Haney
 
+Preview [here](https://medley-fe-tech-test.vercel.app/)
+
 *Note: This project was developed originally on Node v18.18.2 and npm v9.8.1.*
 
 ### Used Tech Stack
