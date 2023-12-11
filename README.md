@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Medley-FE-Tech-Test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Developed by Alex Haney
 
-## Available Scripts
+*Note: This project was developed originally on Node v18.18.2 and npm v9.8.1.*
 
-In the project directory, you can run:
+### Used Tech Stack
+- React (v18.2.0)
+- Typescript
+- Styled Component
+- Axios
+- Eslint and prettier
 
-### `npm start`
+### Run the project using `yarn`
+```
+yarn install
+yarn start
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Practices what I focused on
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**1. Project structure**
 
-### `npm test`
+- `assets`: Directory where asset files like images, fonts and icons are placed.
+- `components`: Directory of common components used in whole project
+- `pages`: Pages of the app
+- `styles`: Directory of styles for styled-component configuration
+- `types`: Interfaces and types used in the app
+- `utils`: Utility funcitons like apis, helpers and data-converters.
+ 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**2. State management**
 
-### `npm run build`
+In this project, the states are being managed using `useState` React hook. Keep practices of the state relationship between ancestors and descendants. And I reduced the state change as much as possible to keep the performence of the application and to reduce the number of component rendering.
+<br />
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**3. Scalability**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The project is structured with scalability in mind, adhering to a modular architecture. Components are organized based on features, promoting maintainability as the codebase grows. This modular approach allows for the easy addition of new features without causing excessive coupling or code duplication.
+<br />
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**4. Component Lifecycle**
 
-### `npm run eject`
+Functional components and hooks are extensively used in this project for managing component lifecycle. The use of hooks like `useState` and `useEffect` provides a more concise and readable way to handle state and side effects.
+<br />
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**5. Linting and Code Formatting**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Linting and code formatting are enforced using ESLint and Prettier, ensuring a consistent and clean codebase. The project follows a set of coding standards defined in the ESLint configuration, and Prettier is used for automatic code formatting. This approach not only improves code readability but also helps catch potential errors and maintain a consistent coding style across the entire project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
